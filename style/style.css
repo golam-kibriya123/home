@@ -12,7 +12,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
 }
 
@@ -130,6 +130,45 @@ main {
 }
 
 
+.payment-agent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.agents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.payment-agent h1 {
+    color: #d07ae1;
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 20px 0px;
+}
+
+.agents .agent {
+    height: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+
+.agent img {
+    height: 30px;
+
+}
+.agent img:hover {
+    height: 40px;
+    transition: .5s;
+
+}
+
 /* style for mobile */
 @media only screen and (max-width: 600px) {
 
@@ -139,9 +178,11 @@ main {
         flex-direction: column;
         align-items: center;
     }
-    .section-header{
+
+    .section-header {
         margin: 20px 0;
     }
+
     .section-header img {
         width: 60px;
         height: 60px;
@@ -168,6 +209,7 @@ main {
         height: 30px;
         width: 30px;
     }
+
     .items .item .item-content .content-img img {
         height: 30px;
         width: 30px;
