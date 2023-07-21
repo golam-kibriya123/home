@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    width: 30%;
+    height: 90vh;
+    background-color: rgb(241, 243, 245);
+    border-radius: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #8e16c5;
+
+    font-weight: 800;
+}
+
+header img {
+    margin: 10px 0;
+    height: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+}
+
+form h1 {
+    font-size: 15px;
+    margin: 15px 0 10px 0;
+
+}
+
+
+
+.form-control {
+    margin: 5px 0 20px 0;
+    height: 40px;
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+
+}
+
+.form-control label {
+    position: absolute;
+    top: -10px;
+    left: 50px;
+    background-color: rgb(241, 243, 245);
+    color: #8e16c5;
+    padding: 2px;
+}
+
+
+.form-control input {
+    height: 100%;
+    width: 95%;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid #8e16c5;
+    background: transparent;
+    padding: 0 0 0 10px;
+
+}
+
+.form-control input:focus {
+    border: 2px solid #d17df8;
+}
+
+.check-remember {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0;
+    color: #8e16c5;
+}
+
+.check-remember>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.check-remember>div>input {
+    cursor: pointer;
+}
+
+.check-remember>span {
+    cursor: pointer;
+}
+
+input[type=submit] {
+    background: #8e16c5;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+    background: #8e16c5a9;
+}
+
+.registration {
+    margin: 20px 0;
+}
+
+.registration>a {
+    margin: 0 5px 0 0;
+    text-decoration: none;
+    color: #8e16c5;
+}
+
+
+/* style for mobile */
+@media only screen and (max-width: 600px) {
+    .login {
+        width: 80%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+}
