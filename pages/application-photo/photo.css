@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #2a782a;
+    --secondary: #e2f1e2a8;
+}
+
+header {
+    background-color: var(--primary);
+    color: #fff;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 100px 0;
+
+}
+
+header>h1 {
+    font-weight: 100;
+    margin: 0 0 0 15px;
+
+}
+
+.camera-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.camera-container>h3{
+font-weight: normal;
+color: rgb(51, 50, 50);
+}
+.camera{
+    height: 300px ;
+    width: 300px;
+    background: #939292;
+    position: relative;
+    margin: 50px 0;
+}
+.camera>img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 40%;
+    bottom: -50px;
+}
+
+
+.camera-btns {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 100px 0 0 0;
+
+}
+
+.retake,
+.capture {
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: var(--primary);
+    padding: 20px ;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+
+}
+
+.capture:hover,
+.retake:hover {
+    background: #fff;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.capture img,
+.retake img {
+    width: 32px;
+}
+.next-prev-btn {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.next-btn,
+.prev-btn {
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    background: var(--primary);
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.next-btn:hover,
+.prev-btn:hover {
+    background: #fff;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.next-btn img,
+.prev-btn img {
+    width: 22px;
+}
+
+
+
+/* style for mobile */
+@media only screen and (max-width: 600px) {
+    .camera-btns {
+        width: 70%;
+    }
+}
