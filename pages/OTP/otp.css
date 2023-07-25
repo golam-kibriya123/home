@@ -109,6 +109,9 @@ header>h1 {
 
 /* style for mobile */
 @media only screen and (max-width: 800px) {
+    body{
+        height: 90vh;
+    }
     header {
         height: 80px;
     }

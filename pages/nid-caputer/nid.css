@@ -199,6 +199,10 @@ input[type=file] {
         width: 90%;
     }
 
+    .drop-container {
+        height: 140px;
+    }
+
     .nid-p1>h1,
     .nid-p2>h1 {
         font-size: 20px;
