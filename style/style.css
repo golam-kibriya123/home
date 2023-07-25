@@ -56,11 +56,12 @@ main {
     cursor: pointer;
     height: 135px;
     width: 135px;
+
 }
 
 .item-content {
-    width: 70px;
-    height: 110px;
+    width: 90px;
+    height: 130px;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -97,8 +98,8 @@ main {
 }
 
 .items .item .item-content .content-img {
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     padding: 5px;
     background-color: #fff;
     border-radius: 50%;
@@ -162,6 +163,7 @@ main {
     height: 30px;
 
 }
+
 .agent img:hover {
     height: 40px;
     transition: .5s;
@@ -201,32 +203,39 @@ main {
         margin: 3px;
     }
 
-    .item-content {
-        width: 40px;
-        height: 70px;
+    .item-content {   
+             border: #d07ae1 1px solid;
+
+        width: 60px;
+        height: 90px;
+
     }
 
     .items .item .item-content .content-img {
         height: 25px;
-        width:25px;
+        width: 25px;
     }
 
     .items .item .item-content .content-img img {
         height: 25px;
         width: 25px;
     }
-    .payment-agent h1{
+
+    .payment-agent h1 {
         font-size: 22px;
     }
+
     .agents .agent {
         height: 25px;
     }
+
     .agent img {
         height: 25px;
     }
+
     .agent img:hover {
         height: 30px;
         transition: .5s;
-    
+
     }
 }
