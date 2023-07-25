@@ -13,11 +13,18 @@
 header {
     background-color: var(--primary);
     color: #fff;
-    height: 100px;
+    height: 70px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 0 0 0 10px;
 
+}
+
+header>img {
+    width: 40px;
+    cursor: pointer;
 }
 
 header>h1 {
@@ -32,12 +39,17 @@ header>h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
 }
-.nid-p1 ,
-.nid-p2{
+
+.nid-p1,
+.nid-p2 {
     margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
+
 .nid-p1 h1,
 .nid-p2 h1 {
     font-weight: normal;
@@ -45,18 +57,81 @@ header>h1 {
     margin: 10px 0;
 }
 
-.nid-p1 img,
-.nid-p2 img {
-    width: 300px;
-    height: 200px;
+/*  */
+.drop-container {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    border: 1px dashed #555;
+    color: #444;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ffff;
+    transition: .5s;
 }
+
+#dropcontainer-f {
+    background-image: url(../../images/logo/agent/nid-f.png);
+
+}
+
+#dropcontainer-b {
+    background-image: url(../../images/logo/agent/nid-b.png);
+
+}
+
+.drop-container>input[type=file] {
+    width: 90%;
+}
+
+.drop-title,
+.drop-subtitle,
+input[type=file] {
+    visibility: hidden;
+}
+
+#dropcontainer-f:hover,
+#dropcontainer-b:hover {
+    background: var(--primary);
+}
+
+.drop-container:hover .drop-title {
+    visibility: visible;
+}
+
+.drop-container:hover .drop-subtitle {
+    visibility: visible;
+}
+
+.drop-container:hover input[type=file] {
+    visibility: visible;
+}
+
+
+.drop-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    transition: color .2s ease-in-out;
+}
+
+/*  */
+
 
 .next-prev-btn {
     width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 50px 0 0 0;
+    margin: 10px 0 0 0;
 }
 
 .next-btn,
@@ -73,6 +148,7 @@ header>h1 {
     color: #fff;
     border-radius: 10px;
     cursor: pointer;
+    text-decoration: none;
 
 }
 
@@ -94,7 +170,39 @@ header>h1 {
 /* style for mobile */
 @media only screen and (max-width: 600px) {
 
+    header {
+        height: 50px;
+    }
+
+    header>h1 {
+        font-size: 22px;
+
+    }
+
+    header>img {
+        width: 20px;
+    }
+
     .nid {
         width: 90%;
+        margin: 0;
+    }
+
+    .nid-p1,
+    .nid-p2 {
+        margin: 10px 0;
+        padding:0 10px;
+    }
+
+    .nid-p1>h1,
+    .nid-p2>h1 {
+        font-size: 20px;
+    }
+
+
+
+    .next-prev-btn {
+
+        margin: 20px 0 0 0;
     }
 }

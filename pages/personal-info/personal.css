@@ -17,7 +17,7 @@ body {
 header {
     background-color: var(--primary);
     color: #fff;
-    height: 100px;
+    height: 70px;
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -25,6 +25,7 @@ header {
     padding: 0 0 0 10px;
 
 }
+
 header>img {
     width: 40px;
     cursor: pointer;
@@ -42,30 +43,33 @@ header>h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px 0 0 0 ;
+    margin: 10px 0 0 0;
 }
 
 form {
     width: 70%;
     background: #fff;
     border-radius: 10px;
-    padding: 10px;
+    padding: 0px 10px;
 
 }
-form>h1{
-font-weight: normal;
-color: gray;
+
+form>h1 {
+    font-weight: normal;
+    color: gray;
 }
+
 .form-control {
     width: 100%;
-    height: 50px;
+    height: 40px;
     position: relative;
-    margin: 35px 0;
+    margin: 32px 0;
 }
 
 .form-control label {
     position: absolute;
-    top: -25px;
+    top: -19px;
+    left: 5px;
 }
 
 .form-control input {
@@ -90,7 +94,7 @@ color: gray;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px 0;
+    margin: 10px 0 0 0;
 }
 
 .next-btn,
@@ -108,6 +112,7 @@ color: gray;
     border-radius: 10px;
     cursor: pointer;
     text-decoration: none;
+    border: 1px solid var(--primary);
 
 }
 
@@ -115,7 +120,7 @@ color: gray;
 .prev-btn:hover {
     background: #fff;
     color: var(--primary);
-    border: 1px solid var(--primary);
+  
 }
 
 .next-btn img,
@@ -124,11 +129,42 @@ color: gray;
 }
 
 
-  
+
 
 /* style for mobile */
 @media only screen and (max-width: 600px) {
-    form,.next-prev-btn {
+
+    header {
+        height: 49px;
+    }
+ header>h1{
+font-size: 23px;
+ }
+    header>img {
+        width: 20px;
+    }
+
+    .personal-info {
+        margin: 10px 0 0 0;
+    }
+
+    form {
+        padding: 0 10px;
+
+    }
+
+    .form-control {
+        height: 40px;
+        margin: 25px 0;
+    }
+
+    .form-control label {
+        position: absolute;
+        top: -18px;
+    }
+
+    form,
+    .next-prev-btn {
         width: 90%;
     }
 }

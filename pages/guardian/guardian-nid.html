@@ -10,23 +10,34 @@
 
 <body>
     <header>
-        <h1>Guardian Capture NID card </h1>
+        <img src="../../images/left-arrow.svg" alt="">
+        <h1>NID Capture</h1>
     </header>
     <section class="nid">
-        <div class="nid-p1">
-            <h1>ID Front Side</h1>
-            <img src="../../images/logo//agent/nid-f.png" alt="">
-        </div>
-        <div class="nid-p2">
-            <h1>Id Back Side (If any)</h1>
-            <img src="../../images/logo//agent/nid-b.png" alt="">
 
+        <div class="nid-p1">
+            <h1>To Upload your NID Front Side click on the photo</h1>
+            <label for="images" class="drop-container" id="dropcontainer-f">
+                <span class="drop-title">Drop files here</span>
+                <span class="drop-subtitle">or</span>
+                <input type="file" id="images" accept="image/*" required>
+            </label>
         </div>
+
+        <div class="nid-p2">
+            <h1> To Upload your NId Back Side (If any) click on the photo </h1>
+            <label for="images" class="drop-container" id="dropcontainer-b">
+                <span class="drop-title">Drop files here</span>
+                <span class="drop-subtitle">or</span>
+                <input type="file" id="images" accept="image/*" required>
+            </label>
+        </div>
+
         <div class="next-prev-btn">
 
             <a class="prev-btn" href="../guardian/guardian-info.html"> <img src="../../images/arrow-prev.svg" alt="">
                 previous</a>
-            <a class="next-btn" href="../review/review.html">Next <img src="../../images/arrow-next.svg" alt=""> </a>
+            <a class="next-btn" href="../upload-cv/cv.html">Next <img src="../../images/arrow-next.svg" alt=""> </a>
         </div>
     </section>
 

@@ -62,7 +62,7 @@ header>h1 {
 /* Style the tab content */
 .tabcontent {
     padding: 6px 12px;
-    background: #f1f1f1;
+    margin: 0 0 80px 0px;
 }
 
 .nid-info ,.contact-info{
@@ -120,11 +120,14 @@ form {
 }
 
 .form-control>label {
-    color: #535252;
+    color: #070707;
 }
 
 .form-control>h1 {
     font-weight: 100;
+    font-size: 20px;
+    color: #535252;
+    margin-top:8px;
 }
 .submit-btn{
     background: var(--primary);
@@ -137,7 +140,7 @@ form {
     border-radius: 10px;
     width: 200px;
     position: fixed;
-    top: 90vh;
     left: 38%;
+    bottom: 10px;
     cursor: pointer;
 }

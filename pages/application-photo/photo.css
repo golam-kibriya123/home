@@ -12,11 +12,11 @@
 header {
     background-color: var(--primary);
     color: #fff;
-    height: 100px;
+    height: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 0 100px 0;
+    margin-bottom: 20px;
 
 }
 
@@ -34,18 +34,21 @@ header>h1 {
     align-items: center;
 
 }
-.camera-container>h3{
-font-weight: normal;
-color: rgb(51, 50, 50);
+
+.camera-container>h3 {
+    font-weight: normal;
+    color: rgb(51, 50, 50);
 }
-.camera{
-    height: 300px ;
-    width: 300px;
+
+.camera {
+    height: 200px;
+    width: 200px;
     background: #939292;
     position: relative;
-    margin: 50px 0;
+    margin: 20px 0;
 }
-.camera>img{
+
+.camera>img {
     width: 40px;
     height: 40px;
     position: absolute;
@@ -59,7 +62,7 @@ color: rgb(51, 50, 50);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 100px 0 0 0;
+    margin: 50px 0 0 0;
 
 }
 
@@ -71,13 +74,15 @@ color: rgb(51, 50, 50);
     justify-content: center;
     border: none;
     background: var(--primary);
-    padding: 20px ;
+    padding: 10px;
     font-size: 16px;
     font-weight: bold;
     color: #fff;
     border-radius: 10px;
     cursor: pointer;
     margin: 10px 0;
+    border: 1px solid var(--primary);
+    transition: .3s;
 
 }
 
@@ -85,13 +90,13 @@ color: rgb(51, 50, 50);
 .retake:hover {
     background: #fff;
     color: var(--primary);
-    border: 1px solid var(--primary);
 }
 
 .capture img,
 .retake img {
     width: 32px;
 }
+
 .next-prev-btn {
     width: 70%;
     display: flex;
@@ -115,6 +120,8 @@ color: rgb(51, 50, 50);
     border-radius: 10px;
     cursor: pointer;
     text-decoration: none;
+    border: 1px solid var(--primary);
+
 
 }
 
@@ -122,7 +129,6 @@ color: rgb(51, 50, 50);
 .prev-btn:hover {
     background: #fff;
     color: var(--primary);
-    border: 1px solid var(--primary);
 }
 
 .next-btn img,
@@ -134,7 +140,20 @@ color: rgb(51, 50, 50);
 
 /* style for mobile */
 @media only screen and (max-width: 600px) {
+    header {
+        height: 50px;
+    }
+
+    header>h1 {
+        font-size: 22px;
+    }
+
     .camera-btns {
         width: 70%;
+    }
+
+    .camera {
+        width: 150px;
+        height: 150px;
     }
 }
