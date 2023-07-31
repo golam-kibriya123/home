@@ -5,7 +5,7 @@
 }
 
 body {
-    width: 100%;
+    max-width: 1190px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -32,13 +32,16 @@ header {
     align-items: center;
     text-align: center;
     color: #8e16c5;
-
     font-weight: 800;
+}
+
+header>h1 {
+    font-size: 22px;
 }
 
 header img {
     margin: 10px 0;
-    height: 40px;
+    height: 30px;
 }
 
 form {
@@ -141,21 +144,85 @@ input[type=submit]:hover {
     color: #8e16c5;
 }
 
+/* payment get way */
+
+.payment-agent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.agents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.payment-agent h1 {
+    color: #d07ae1;
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 20px 0px;
+}
+
+.agents .agent {
+    height: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+
+.agent img {
+    height: 30px;
+
+}
+
+.agent img:hover {
+    height: 40px;
+    transition: .5s;
+
+}
+
 
 /* style for mobile */
 @media only screen and (max-width: 600px) {
 
     .login {
-        width: 90%;
-        height: 90vh;
+        width: 65%;
+        height: 75vh;
     }
 
     header>h1 {
-        font-size: 22px;
+        font-size: 18px;
     }
-
+    header>img{
+        height: 20px;
+    }
     form {
         width: 100%;
     }
+
+
+    .payment-agent h1 {
+        font-size: 22px;
+    }
+
+    .agents .agent {
+        height: 25px;
+    }
+
+    .agent img {
+        height: 25px;
+    }
+
+    .agent img:hover {
+        height: 30px;
+        transition: .5s;
+
+    }
+
 
 }

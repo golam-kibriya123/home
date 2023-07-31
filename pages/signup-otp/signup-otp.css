@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: #ffffff;
+    position: relative;
+
+}
+
+:root {
+    --primary: #2a782a;
+    --secondary: #e2f1e2a8;
+}
+
+
+header {
+    background-color: var(--primary);
+    color: #fff;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+header>h1 {
+    font-weight: 100;
+    margin: 0 0 0 15px;
+
+}
+
+.verification-logo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0 0 0;
+}
+
+.verification-logo img {
+    height: 150px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    width: 40%;
+    margin: 50px auto;
+
+
+}
+
+.form-control input {
+    height: 50px;
+    width: 73%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: var(--secondary);
+    border: 1px solid var(--primary);
+    padding: 0 0 0 10px;
+}
+
+.form-control>button {
+    width: 25%;
+    border: none;
+    background: var(--primary);
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.form-control>label {
+    position: absolute;
+    top: -28px;
+
+}
+
+.next-btn {
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    background: var(--primary);
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.next-btn img {
+    width: 22px;
+}
+
+/* style for mobile */
+@media only screen and (max-width: 800px) {
+    body{
+        height: 90vh;
+    }
+    header {
+        height: 80px;
+    }
+
+    .verification-logo img {
+        height: 150px;
+    }
+
+    .form-control {
+        width: 80%;
+    }
+
+    .form-control input {
+        height: 40px;
+        width:70%;
+    }
+
+    .form-control>button {
+        width: 28%;
+        padding: 2px;
+    }
+}
